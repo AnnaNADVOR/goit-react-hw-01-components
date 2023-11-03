@@ -1,4 +1,4 @@
-import FriendItem from "./FriendItem"
+import FriendItem  from "./FriendItem"
 export default function FriendsList({ friends }) {
     return (
         <ul>

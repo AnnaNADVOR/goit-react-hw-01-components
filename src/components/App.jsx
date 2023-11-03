@@ -1,9 +1,11 @@
 import user from './Profile/user.json';
 import data from './Statistics/data.json';
 import friends from './FriendsList/friends.json';
+import transactios from './TransactionHistory/transactions.json'
 import Profile from './Profile/Profile';
 import StatisticList from './Statistics/StatisticList';
 import FriendsList from './FriendsList/FriendsList';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
 
 const App = () => {
   return (
@@ -17,6 +19,7 @@ const App = () => {
       />
       <StatisticList title="Upload stats" stats={data} />
       <FriendsList friends={friends} />
+      <TransactionHistory transactions={transactios} />
     </div>
   );
 };
