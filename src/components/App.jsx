@@ -3,7 +3,7 @@ import data from './Statistics/data.json';
 import friends from './FriendsList/friends.json';
 import transactios from './TransactionHistory/transactions.json'
 import Profile from './Profile/Profile';
-import StatisticList from './Statistics/StatisticList';
+import Statistics from './Statistics/Statistics';
 import FriendsList from './FriendsList/FriendsList';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
 
@@ -17,7 +17,7 @@ const App = () => {
         followers={user.stats.followers}
         stats={user.stats}
       />
-      <StatisticList title="Upload stats" stats={data} />
+      <Statistics title="Upload stats" stats={data} />
       <FriendsList friends={friends} />
       <TransactionHistory transactions={transactios} />
     </div>
