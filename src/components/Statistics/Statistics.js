@@ -1,12 +1,22 @@
+import css from './Statistics.module.css';
+import baseCss from '../../idex.module.css';
+
+
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}
+
 export default function Statistics({ title, stats }) {
     return (
-        <section>
-            {title && (<h2>{title}</h2>)}
-                <ul>
+        <section className={css.section}>
+            {title && (<h2 className={css.title}>{title}</h2>)}
+                <ul className={baseCss.list}>
                     {stats.map(el => (
-                    <li key={el.id}>
-                        <span>{el.label}</span>
-                        <span>{el.percentage}</span>
+                        <li className={`${baseCss.item} ${css.item}`} style={{backgroundColor: getRandomHexColor()}} key={el.id}>
+                        <span className={css.label}>{el.label}</span>
+                        <span className={css.percentage}>{el.percentage}%</span>
                     </li>))}      
                 </ul>
         </section>

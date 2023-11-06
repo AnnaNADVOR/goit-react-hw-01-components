@@ -1,5 +1,7 @@
-import  PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
+import baseCss from '../../idex.module.css';
 import css from './Profile.module.css';
+
 
 export default function Profile(props) {
     const { username, tag, location, avatar, stats } = props;
@@ -11,21 +13,21 @@ export default function Profile(props) {
                     alt="User avatar"
                 />
                 <p className={css.user_name}>{username}</p>
-                <p className={css.text}>@{tag}</p>
-                <p className={css.text}>{location}</p>
+                <p className={baseCss.text}>@{tag}</p>
+                <p className={baseCss.text}>{location}</p>
             </div>
-            <ul className={css.list}>
-                <li className={css.item}>
+            <ul className={`${ css.list } ${ baseCss.list }`}>
+                <li className={baseCss.item}>
                     <span className={css.main_text}>Followers</span>
-                    <span className={css.text}>{stats.followers}</span>
+                    <span className={baseCss.text}>{stats.followers}</span>
                 </li>
-                <li className={css.item}>
+                <li className={baseCss.item}>
                     <span className={css.main_text}>Views</span>
-                    <span className={css.text}>{stats.views}</span>
+                    <span className={baseCss.text}>{stats.views}</span>
                 </li>
-                <li className={css.item}>
+                <li className={baseCss.item}>
                     <span className={css.main_text}>Likes</span>
-                    <span className={css.text}>{stats.likes}</span>
+                    <span className={baseCss.text}>{stats.likes}</span>
                 </li>
             </ul>
         </div>

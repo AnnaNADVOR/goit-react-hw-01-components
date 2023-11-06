@@ -6,11 +6,10 @@ import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
 import FriendsList from './FriendsList/FriendsList';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
-import css from './Profile/Profile.module.css';
 
 const App = () => {
   return (
-    <div className={css.container}>
+    <div>
       <Profile username={user.username}
         tag={user.tag}
         location={user.location}
