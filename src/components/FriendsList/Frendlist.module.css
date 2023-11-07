@@ -1,0 +1,47 @@
+.card {
+    display: inline-flex;
+    gap: 20px;    
+    align-items: center;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid rgb(194, 182, 182);
+    border-radius: 10px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+
+.card:hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, .12),
+        0px 1px 1px rgba(0, 0, 0, .14),
+        0px 2px 1px rgba(0, 0, 0, .2);
+}
+
+.avatar {
+    border: 1px solid rgb(216, 155, 225); 
+    border-radius: 10px;
+    background-color:rgb(216, 155, 225);
+
+}
+
+.status {
+    display: block;
+    border-radius: 50%;
+    background-color: rgb(25, 102, 25);
+    width: 20px;
+    height: 20px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, .12),
+        0px 1px 1px rgba(0, 0, 0, .14),
+         0px 2px 1px rgba(0, 0, 0, .2);
+}
+
+.online {
+    background-color: rgb(211, 31, 31);
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 30px 30px;    
+    justify-content:center;
+}

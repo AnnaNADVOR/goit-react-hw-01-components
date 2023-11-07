@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
 import baseCss from '../../idex.module.css';
 
@@ -23,4 +24,9 @@ export default function Statistics({ title, stats }) {
     )
 }
 
+Statistics.propTypes = { 
+    title: PropTypes.string, 
+    stats: PropTypes.array,
+    
+}
 

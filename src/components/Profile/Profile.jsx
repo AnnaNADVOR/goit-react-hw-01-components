@@ -18,15 +18,15 @@ export default function Profile(props) {
             </div>
             <ul className={`${ css.list } ${ baseCss.list }`}>
                 <li className={baseCss.item}>
-                    <span className={css.main_text}>Followers</span>
+                    <span className={baseCss.main_text}>Followers</span>
                     <span className={baseCss.text}>{stats.followers}</span>
                 </li>
                 <li className={baseCss.item}>
-                    <span className={css.main_text}>Views</span>
+                    <span className={baseCss.main_text}>Views</span>
                     <span className={baseCss.text}>{stats.views}</span>
                 </li>
                 <li className={baseCss.item}>
-                    <span className={css.main_text}>Likes</span>
+                    <span className={baseCss.main_text}>Likes</span>
                     <span className={baseCss.text}>{stats.likes}</span>
                 </li>
             </ul>
@@ -35,9 +35,9 @@ export default function Profile(props) {
 }
 
 Profile.propTypes = { 
-    username: PropTypes.string, 
-    tag: PropTypes.string,
-    location: PropTypes.string,
-    avatar: PropTypes.string,
-    stats: PropTypes.object,
+    username: PropTypes.string.isRequired, 
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    stats: PropTypes.object.isRequired,
 }
